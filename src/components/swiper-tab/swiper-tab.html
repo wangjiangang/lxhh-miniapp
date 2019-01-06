@@ -1,0 +1,6 @@
+<scroll-view scroll-x class="swiper-tab-list" scroll-with-animation scroll-into-view="swiper-tab_{{activeIndex}}" scroll-left="{{scrollLeft}}" >
+    <block wx:for="{{datas}}" wx:key="{{item.id}}">
+        <view id="swiper-tab_{{item.id}}" class="swiper-tab-item {{ item.id == activeIndex ? 'active' : '' }}" style="width:{{tabWidth}}px" bindtap="tabClick" data-index="{{index}}">{{item.name}}</view>
+    </block>
+    <view style="transform: translateX({{sliderOffset}}px);width:{{tabWidth}}px" class="swiper-tab-slider"></view>
+</scroll-view>

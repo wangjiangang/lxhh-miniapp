@@ -1,0 +1,6 @@
+<view class="select-mask-container">
+    <view class="select-mask-mask" wx:if="{{active}}" bindtap="toggleMask"></view>
+    <view class="select-mask-content {{active ? 'active' : ''}}">
+        <slot></slot>
+    </view>
+</view>

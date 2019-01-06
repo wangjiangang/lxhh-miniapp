@@ -1,0 +1,49 @@
+<view class="page-wrapper">
+    <view class="detail-banner">
+        <swiper
+                indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}"
+                interval="{{interval}}"
+                duration="{{duration}}"
+                style="height: 240px"
+                indicator-active-color="#0a6edd"
+                indicator-color="rgba(255,255,255,.3)"
+        >
+            <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" mode="aspectFit" data-url="{{item}}" bindtap="lookBigPic"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="detail-info">
+        <view class="detail-price">
+            <text>￥{{currentGoods.price}}</text>
+        </view>
+        <view class="detail-title">
+            {{currentGoods.name}}
+        </view>
+        <view wx:if="{{currentGoods.weight}}" class="detail-tip">
+            <text class="remark">重量</text>
+            {{currentGoods.weight}}
+        </view>
+        <view wx:if="{{currentGoods.size}}" class="detail-tip">
+            <text class="remark">规格</text>
+            {{currentGoods.size}}
+        </view>
+    </view>
+    <view class="main-title">
+        <view class="title-text">
+            <text>产品介绍</text>
+        </view>
+    </view>
+    <view class="detail-introduce">
+        {{currentGoods.desc}}
+    </view>
+    <view class="big-pic" hidden="{{bigPicModel}}">
+        <view class="close-btn" bindtap="bigPicModelHide">×</view>
+        <view class="image-wrapper">
+            <image src="{{currentBigPic}}"/>
+        </view>
+    </view>
+</view>

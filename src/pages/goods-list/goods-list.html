@@ -1,0 +1,25 @@
+<view class="page-wrapper">
+   
+    <view class="goods-list">
+        <view class="goods-item" wx:for="{{goodsList}}" wx:key="{{item.id}}" bindtap="toGoodsDetail" data-id="{{item.id}}">
+            <view class="goods-pic">
+                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+            </view>
+            <view class="goods-info">
+                <text class="goods-title">{{item.name}}</text>
+                <view class="goods-price">
+                    <view class="price-main">
+                        <text class="price-num">￥ {{item.price}}</text>
+                    </view>
+                    <view wx:if="{{item.retail}}" class="price-tip">可零售</view>
+                </view>
+                <view wx:if="{{item.weight}}" class="goods-size">
+                    <text>重量：{{item.weight}}</text>
+                </view>
+                <view wx:if="{{item.size}}" class="goods-size">
+                    <text>规格：{{item.size}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+<view class="page-wrapper">
+    <view class="index-banner">
+        <swiper
+                indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}"
+                interval="{{interval}}"
+                duration="{{duration}}"
+        >
+            <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="index-business">
+        <view class="business-item" bindtap="toBuyerReading">
+            <image src="../../images/business/notes.png" background-size="cover"></image>
+            <text>购买须知</text>
+        </view>
+        <view class="business-item" bindtap="toCommonProblem">
+            <image src="../../images/business/question.png" background-size="cover"></image>
+            <text>常见问题</text>
+        </view>
+    </view>
+    <view class="main-title">
+        <view class="title-text">
+            <text>店长推荐</text>
+        </view>
+        <view class="title-aside" bindtap="toGoodsList">
+            更多
+        </view>
+    </view>
+    <view class="goods-list">
+        <view wx:for="{{recommendList}}" wx:key="{{item.id}}" class="goods-item" bindtap="toGoodsDetail" data-id="{{item.id}}">
+            <view class="goods-pic">
+                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+            </view>
+            <view class="goods-info">
+                <text class="goods-title">{{item.name}}</text>
+                <view class="goods-price">
+                    <view class="price-main">
+                        <text class="price-num">￥ {{item.price}}</text>
+                    </view>
+                    <view wx:if="{{item.retail}}" class="price-tip">可零售</view>
+                </view>
+                <view wx:if="{{item.weight}}" class="goods-size">
+                    <text>重量：{{item.weight}}</text>
+                </view>
+                <view wx:if="{{item.size}}" class="goods-size">
+                    <text>规格：{{item.size}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="main-title">
+        <view class="title-text">
+            <text>年终超值套餐</text>
+        </view>
+        <view class="title-aside" bindtap="toGoodsList">
+            更多
+        </view>
+    </view>
+    <view class="goods-list">
+        <view wx:for="{{mealList}}" wx:key="{{item.id}}" class="goods-item" bindtap="toGoodsDetail" data-id="{{item.id}}">
+            <view class="goods-pic">
+                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+            </view>
+            <view class="goods-info">
+                <text class="goods-title">{{item.name}}</text>
+                <view class="goods-price">
+                    <view class="price-main">
+                        <text class="price-num">￥ {{item.price}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

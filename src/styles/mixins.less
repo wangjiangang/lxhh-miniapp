@@ -1,0 +1,38 @@
+.text-overflow() {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.border-top(@color: #dcdcdc) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: @color;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    content: "";
+  }
+}
+
+.border-bottom(@color: #dcdcdc) {
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: @color;
+    transform: scale(.5);
+    transform-origin: 0 100%;
+    content: "";
+  }
+}

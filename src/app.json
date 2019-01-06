@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goods-list/goods-list",
+    "pages/buyer-reading/buyer-reading",
+    "pages/common-problem/common-problem",
+    "pages/goods-detail/goods-detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "林鲜海汇",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#eeeeee"
+  }
+}
