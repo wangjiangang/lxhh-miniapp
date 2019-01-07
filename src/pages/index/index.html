@@ -34,7 +34,7 @@
     <view class="goods-list">
         <view wx:for="{{recommendList}}" wx:key="{{item.id}}" class="goods-item" bindtap="toGoodsDetail" data-id="{{item.id}}">
             <view class="goods-pic">
-                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+                <image src="{{goodsBaseUrl + item.images[0]}}" mode="aspectFit"></image>
             </view>
             <view class="goods-info">
                 <text class="goods-title">{{item.name}}</text>
@@ -64,7 +64,7 @@
     <view class="goods-list">
         <view wx:for="{{mealList}}" wx:key="{{item.id}}" class="goods-item" bindtap="toGoodsDetail" data-id="{{item.id}}">
             <view class="goods-pic">
-                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+                <image src="{{goodsBaseUrl + item.images[0]}}" mode="aspectFit"></image>
             </view>
             <view class="goods-info">
                 <text class="goods-title">{{item.name}}</text>

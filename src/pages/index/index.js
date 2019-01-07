@@ -1,5 +1,6 @@
 import {recommend} from '../../api/recommend';
 import {meal} from '../../api/meal';
+import {goodsBaseUrl} from '../../config/config';
 Page({
     data: {
         imgUrls: [
@@ -10,7 +11,8 @@ Page({
         interval: 5000,
         duration: 1000,
         recommendList: recommend,
-        mealList: meal
+        mealList: meal,
+        goodsBaseUrl
     },
     toGoodsList: function() {
         wx.navigateTo({

@@ -1,17 +1,15 @@
 import {goods} from '../../api/goods';
+import {goodsBaseUrl} from '../../config/config';
 Page({
     data: {
-        imgUrls: [
-            '../../images/goods/beijixia01.jpg',
-            '../../images/goods/beijixia02.jpg',
-        ],
         indicatorDots: true,
-        autoplay: false,
+        autoplay: true,
         interval: 5000,
         duration: 1000,
         bigPicModel: true,
         currentBigPic: null,
-        currentGoods: null
+        currentGoods: null,
+        goodsBaseUrl
     },
     onLoad: function(query) {
         const goodsId = +query.goodsId;

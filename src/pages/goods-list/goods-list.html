@@ -3,7 +3,7 @@
     <view class="goods-list">
         <view class="goods-item" wx:for="{{goodsList}}" wx:key="{{item.id}}" bindtap="toGoodsDetail" data-id="{{item.id}}">
             <view class="goods-pic">
-                <image src="{{item.images[0]}}" mode="aspectFit"></image>
+                <image src="{{goodsBaseUrl + item.images[0]}}" mode="aspectFit"></image>
             </view>
             <view class="goods-info">
                 <text class="goods-title">{{item.name}}</text>

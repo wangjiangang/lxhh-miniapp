@@ -9,9 +9,9 @@
                 indicator-active-color="#0a6edd"
                 indicator-color="rgba(255,255,255,.3)"
         >
-            <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+            <block wx:for="{{currentGoods.images}}" wx:key="{{item}}">
                 <swiper-item>
-                    <image src="{{item}}" class="slide-image" mode="aspectFit" data-url="{{item}}" bindtap="lookBigPic"/>
+                    <image src="{{goodsBaseUrl + item}}" class="slide-image" mode="aspectFit" data-url="{{goodsBaseUrl + item}}" bindtap="lookBigPic"/>
                 </swiper-item>
             </block>
         </swiper>

@@ -25,3 +25,5 @@ export const env = {
 };
 
 export const domain = requestDomain;
+
+export const goodsBaseUrl = 'http://pkxy1x237.bkt.clouddn.com/image';
