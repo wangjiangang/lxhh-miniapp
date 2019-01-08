@@ -3,7 +3,7 @@ export const goods = [
         id: 1,
         name: '极品北极虾',
         weight: '10斤/件',
-        size: '90-130',
+        size: '90-130只',
         price: '420/件',
         retail: 1,
         images: [
@@ -82,7 +82,7 @@ export const goods = [
     {
         id: 6,
         name: '厄瓜多尔白虾',
-        weight: '5斤/件',
+        weight: '4斤/件',
         price: '160/件',
         size: '30-40只',
         retail: 0,

@@ -3,7 +3,7 @@ export const recommend = [
         id: 1,
         name: '极品北极虾',
         weight: '10斤/件',
-        size: '90-130',
+        size: '90-130只',
         price: '420/件',
         retail: 1,
         images: [
