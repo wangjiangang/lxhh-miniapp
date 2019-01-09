@@ -45,7 +45,7 @@ export const goods = [
     {
         id: 4,
         name: '阿根廷红虾',
-        weight: '10斤/件',
+        weight: '4斤/件',
         price: '190/件',
         size: '16-20只',
         retail: 0,
