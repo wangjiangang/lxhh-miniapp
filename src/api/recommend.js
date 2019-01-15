@@ -31,7 +31,7 @@ export const recommend = [
         id: 10,
         name: '蟹肉棒',
         weight: '1斤/袋',
-        price: '30/袋',
+        price: '22/袋',
         retail: 0,
         images: [
             '/xrb/01.jpg',

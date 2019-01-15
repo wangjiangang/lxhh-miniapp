@@ -22,9 +22,10 @@ export const goods = [
         size: '90-120只',
         retail: 1,
         images: [
-            '/bjxbjx/01.jpg',
+            '/bjxbjx/05.jpg',
             '/bjxbjx/02.jpg',
             '/bjxbjx/03.jpg',
+            '/bjxbjx/04.jpg',
         ],
         desc: '北极甜虾，又称北极虾。因产自北极附近海域且虾有淡淡甜味而得名。北极甜虾捕捞于北大西洋海域，海上冷冻，保证新鲜。目前在中国、日本最有影响力的产地是北大西洋，特别是冰岛水产品，是捕获于北极附近海域的北极甜虾。生的北极甜虾是日本寿司的上乘用料。北极虾是个可爱的生物，刚出生的虾都是雄性，长到三四岁后变成雌性。豆黄蟹子麦黄鳖，北极虾也分时节，七八月的最佳，满头籽，又称桔头。就好比是螃蟹，顶盖肥的才好，所以头籽>无籽>腹籽，是这样个排序。'
     },
@@ -36,7 +37,7 @@ export const goods = [
         size: '80-100只',
         retail: 1,
         images: [
-            '/bjxbjx/01.jpg',
+            '/bjxbjx/04.jpg',
             '/bjxbjx/02.jpg',
             '/bjxbjx/03.jpg',
         ],
@@ -139,7 +140,7 @@ export const goods = [
         id: 10,
         name: '蟹肉棒',
         weight: '1斤/袋',
-        price: '30/袋',
+        price: '22/袋',
         retail: 0,
         images: [
             '/xrb/01.jpg',
