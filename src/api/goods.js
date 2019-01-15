@@ -152,7 +152,7 @@ export const goods = [
     {
         id: 11,
         name: '虾滑',
-        weight: '220克/袋',
+        weight: '200克/袋',
         price: '25/袋',
         retail: 0,
         images: [
