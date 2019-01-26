@@ -17,8 +17,8 @@ export const recommend = [
     {
         id: 9,
         name: '黄渤海湾野生带鱼',
-        weight: '5.5斤（净重）/件',
-        price: '180/件',
+        weight: '5斤（净重）/件',
+        price: '160/件',
         retail: 0,
         images: [
             '/hbhwysdy/01.jpg',
