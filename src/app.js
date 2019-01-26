@@ -21,6 +21,14 @@ App({
                 }
             }
         });
+        if(wx.cloud) {
+            wx.cloud.init({
+                env: 'text',
+                traceUser: true
+            });
+        } else {
+            console.error('版本太低，不具备云开发能力');
+        }
     },
 
     // 获取用户信息
